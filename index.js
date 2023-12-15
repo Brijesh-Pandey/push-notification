@@ -15,7 +15,7 @@ const publicVapidKey =
 const privateVapidKey = "3KzvKasA2SoCxsp0iIG_o9B0Ozvl1XDwI63JRKNIWBM";
 
 webpush.setVapidDetails(
-  "mailto:test@test.com",
+  "mailto:brijeshpandey18@gmail.com",
   publicVapidKey,
   privateVapidKey
 );
@@ -29,7 +29,7 @@ app.post("/subscribe", (req, res) => {
   res.status(201).json({});
 
   // Create payload
-  const payload = JSON.stringify({ title: "Push Test" });
+  const payload = JSON.stringify({ title: "Mangekyo Sharingan" });
 
   // Pass object into sendNotification
   webpush
